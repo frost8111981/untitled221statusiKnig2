@@ -8,13 +8,23 @@ public class Main {
         FromArchievedStatusMover fromArchievedStatusMover = new FromArchievedStatusMover();
         FromBorrowedStatusMover fromBorrowedStatusMover = new FromBorrowedStatusMover();
 
-        fromAvailableStatusMover.moveToStatus(book,Status.AVAILABLE);
-        fromAvailableStatusMover.moveToStatus(book,Status.ARCHIVED);
+//        fromAvailableStatusMover.moveToStatus(book,Status.AVAILABLE);  // с ифом и элсе
+//        fromAvailableStatusMover.moveToStatus(book,Status.ARCHIVED);
+//
+//        fromArchievedStatusMover.moveToStatus(book,Status.AVAILABLE);
+//
+//        fromBorrowedStatusMover.moveToStatus(book,Status.BORROWED);
+//        fromBorrowedStatusMover.moveToStatus(book,Status.BORROWED);
+//
+//        System.out.println(book);
 
+
+          fromAvailableStatusMover.moveToStatus(book,Status.BORROWED);
+          fromBorrowedStatusMover.moveToStatus(book,Status.BORROWED);
+        fromBorrowedStatusMover.moveToStatus(book,Status.ARCHIVED);
+        fromArchievedStatusMover.moveToStatus(book,Status.ARCHIVED);
         fromArchievedStatusMover.moveToStatus(book,Status.AVAILABLE);
 
-        fromBorrowedStatusMover.moveToStatus(book,Status.BORROWED);
-        fromBorrowedStatusMover.moveToStatus(book,Status.BORROWED);
 
 
     }

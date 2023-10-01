@@ -6,7 +6,7 @@ public class Book {
 
     public Book(String name, Status status) {
         this.name = name;
-        this.status = status;
+        this.status = Status.AVAILABLE;
     }
 
     public String getName() {
@@ -23,5 +23,10 @@ public class Book {
 
     public void setStatus(Status status) {
         this.status = status;
+    }
+
+    @Override
+    public String toString() {
+        return "Книга :" + name + " cо статусом - " + status;
     }
 }
